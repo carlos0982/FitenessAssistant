@@ -61,7 +61,7 @@ public class test extends javax.swing.JFrame {
                 jLabel2.setForeground(Color.white);
                 jLabel2.setHorizontalAlignment(SwingConstants.CENTER);
 
-		jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/doc.png"))); // NOI18N
+		 jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/doc.png"))); // NOI18N
 
 		jLabel5.setFont(new java.awt.Font("Freestyle Script", 0, 17)); // NOI18N
 		jLabel5.setText("Training");
