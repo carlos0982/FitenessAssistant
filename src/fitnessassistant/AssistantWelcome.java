@@ -6,19 +6,12 @@ import static javax.swing.JOptionPane.YES_NO_OPTION;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 
-/**
- *
- * @author Jonnathan Salinas
- * @category Expertos Sistem
- * @Date 12/13/2017
- */
-
-public class test extends javax.swing.JFrame {
+public class AssistantWelcome extends javax.swing.JFrame {
 
 	/**
 	 * Creates new form formularioSE
 	 */
-	public test() {
+	public AssistantWelcome() {
 		initComponents();
 		setTitle("Expert System to Diagnosis of Diseases");
 		setResizable(false);
@@ -61,7 +54,7 @@ public class test extends javax.swing.JFrame {
                 jLabel2.setForeground(Color.white);
                 jLabel2.setHorizontalAlignment(SwingConstants.CENTER);
 
-		 jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/doc.png"))); // NOI18N
+		jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/doc.png"))); // NOI18N
 
 		jLabel5.setFont(new java.awt.Font("Freestyle Script", 0, 17)); // NOI18N
 		jLabel5.setText("Training");
@@ -327,25 +320,28 @@ public class test extends javax.swing.JFrame {
 				}
 			}
 		} catch (ClassNotFoundException ex) {
-			java.util.logging.Logger.getLogger(test.class.getName()).log(java.util.logging.Level.SEVERE, null,
+			java.util.logging.Logger.getLogger(AssistantWelcome.class.getName()).log(java.util.logging.Level.SEVERE, null,
 					ex);
 		} catch (InstantiationException ex) {
-			java.util.logging.Logger.getLogger(test.class.getName()).log(java.util.logging.Level.SEVERE, null,
+			java.util.logging.Logger.getLogger(AssistantWelcome.class.getName()).log(java.util.logging.Level.SEVERE, null,
 					ex);
 		} catch (IllegalAccessException ex) {
-			java.util.logging.Logger.getLogger(test.class.getName()).log(java.util.logging.Level.SEVERE, null,
+			java.util.logging.Logger.getLogger(AssistantWelcome.class.getName()).log(java.util.logging.Level.SEVERE, null,
 					ex);
 		} catch (javax.swing.UnsupportedLookAndFeelException ex) {
-			java.util.logging.Logger.getLogger(test.class.getName()).log(java.util.logging.Level.SEVERE, null,
+			java.util.logging.Logger.getLogger(AssistantWelcome.class.getName()).log(java.util.logging.Level.SEVERE, null,
 					ex);
 		}
+		// </editor-fold>
+		// </editor-fold>
+		// </editor-fold>
 		// </editor-fold>
 
 		/* Create and display the form */
 		java.awt.EventQueue.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				new test().setVisible(true);
+				new AssistantWelcome().setVisible(true);
 			}
 		});
 	}
