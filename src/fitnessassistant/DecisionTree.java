@@ -13,8 +13,7 @@ public class DecisionTree {
 
     public String getTrainingPlan(Person person) {
         
-        person.computeIMC();
-        double IMC = person.IMC;
+        double IMC = person.computeIMC();
         String recomendation = "Work out";
          
         if (person.gender.equals("MALE")) {

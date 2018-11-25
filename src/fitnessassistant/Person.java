@@ -15,7 +15,6 @@ public class Person {
     int age;
     double heigth;
     double weight;
-    double IMC;
     boolean tieneEnfermedades;
     boolean smoke;
     boolean drink;
@@ -61,8 +60,9 @@ public class Person {
         this.activity = activity;
     }
     
-    public void computeIMC(){
-        IMC = weight/(heigth*heigth);
+    public double computeIMC(){
+        double IMC = weight/(heigth*heigth);
+        return IMC;
     }
    
 }
