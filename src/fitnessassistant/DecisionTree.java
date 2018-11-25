@@ -25,16 +25,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -45,16 +77,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -65,16 +129,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -85,16 +181,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -109,16 +237,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -129,16 +289,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -149,16 +341,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -169,16 +393,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -196,16 +452,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -216,16 +504,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -236,16 +556,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -256,16 +608,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -280,16 +664,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -300,16 +716,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -320,16 +768,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
@@ -340,16 +820,48 @@ public class DecisionTree {
                     if(person.tieneEnfermedades){
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         
                     }else{
                         
                         if(person.drink || person.smoke){
-                            //Recomendation goes here
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
+                            
                         }else{
+                            
+                            if(person.activity.equals("SEDENTARY")){
+                                // Recomendation goes here
+                            }else if(person.activity.equals("MODERATE")){
+                                // Recomendation goes here
+                            }else{
+                                // Recomendation goes here
+                            }
                             
                         }
                         

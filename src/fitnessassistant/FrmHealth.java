@@ -11,11 +11,14 @@ package fitnessassistant;
  */
 public class FrmHealth extends javax.swing.JFrame {
 
-    /**
-     * Creates new form FrmHealth
-     */
+    Person person;
+    
     public FrmHealth() {
         initComponents();
+    }
+    
+    public void setData(Person person){
+        this.person = person;
     }
 
     /**
@@ -30,10 +33,10 @@ public class FrmHealth extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
+        smoke = new javax.swing.JComboBox<>();
+        drink = new javax.swing.JComboBox<>();
+        activity = new javax.swing.JComboBox<>();
+        finish = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(700, 500));
@@ -44,13 +47,18 @@ public class FrmHealth extends javax.swing.JFrame {
 
         jLabel3.setText("What is your physical activity?");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "YES", "NO" }));
+        smoke.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "YES", "NO" }));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "YES", "NO" }));
+        drink.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "YES", "NO" }));
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SEDENTARY", "MODERATE", "ACTIVE" }));
+        activity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SEDENTARY", "MODERATE", "ACTIVE" }));
 
-        jButton1.setText("FINISH");
+        finish.setText("FINISH");
+        finish.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                finishActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -66,13 +74,14 @@ public class FrmHealth extends javax.swing.JFrame {
                             .addComponent(jLabel3))
                         .addGap(40, 40, 40)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(activity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(drink, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(smoke, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(357, 357, 357)
-                        .addComponent(jButton1)))
-                .addContainerGap(312, Short.MAX_VALUE))
+                        .addComponent(finish)))
+                .addContainerGap(297, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -80,22 +89,49 @@ public class FrmHealth extends javax.swing.JFrame {
                 .addGap(150, 150, 150)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(smoke, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(64, 64, 64)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(drink, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(66, 66, 66)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(activity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(finish)
                 .addGap(71, 71, 71))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void finishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finishActionPerformed
+        
+        boolean drinking, smoking, working;
+        String drinkInfo = drink.getSelectedItem().toString();
+        String smokeInfo = smoke.getSelectedItem().toString();
+        String activityInfo = activity.getSelectedItem().toString();
+        
+        if (drinkInfo.equals("YES")){
+            drinking = true;
+        }else{
+            drinking = false;
+        }
+        
+        if (smokeInfo.equals("YES")){
+            smoking = true;
+        }else{
+            smoking = false;
+        }
+        
+        person.setDrink(drinking);
+        person.setSmoke(smoking);
+        person.setPhysicalActivity(activityInfo); 
+        
+        DecisionTree tree = new DecisionTree();
+        String recomendation = tree.getTrainingPlan(person);
+    }//GEN-LAST:event_finishActionPerformed
 
     /**
      * @param args the command line arguments
@@ -133,12 +169,12 @@ public class FrmHealth extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> activity;
+    private javax.swing.JComboBox<String> drink;
+    private javax.swing.JButton finish;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JComboBox<String> smoke;
     // End of variables declaration//GEN-END:variables
 }

@@ -186,27 +186,11 @@ public class AssistantWelcome extends javax.swing.JFrame {
 	}// </editor-fold>//GEN-END:initComponents
 
 	private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton1ActionPerformed
-		int u, d, t;
-
-		u = JOptionPane.showConfirmDialog(rootPane, "¿Usted presenta orina constante?", null, YES_NO_OPTION);
-
-		if (u == 0) {
-			diabetes();
-		} else if (u == 1) {
-			d = JOptionPane.showConfirmDialog(rootPane, "¿Usted presenta ardor en el estomago?", null, YES_NO_OPTION);
-			if (d == 0) {
-				gastritis();
-			} else if (d == 1) {
-				t = JOptionPane.showConfirmDialog(rootPane, "¿Usted presenta hinchazon en extremidades?", null,
-						YES_NO_OPTION);
-				if (t == 0) {
-					colesterol();
-				} else if (t == 1) {
-					JOptionPane.showMessageDialog(rootPane, "Usted no presenta ninguna de las 3 enfermedades", null,
-							YES_NO_OPTION);
-				}
-			}
-		}
+		
+            FrmInfo infoPerson = new FrmInfo();
+            infoPerson.setLocationRelativeTo(null);
+            infoPerson.show();
+            
 	}// GEN-LAST:event_jButton1ActionPerformed
 
 	private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton2ActionPerformed

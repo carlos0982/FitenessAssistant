@@ -11,11 +11,14 @@ package fitnessassistant;
  */
 public class FrmDiseases extends javax.swing.JFrame {
 
-    /**
-     * Creates new form FrmDiseases
-     */
+    Person person;
+    
     public FrmDiseases() {
         initComponents();
+    }
+    
+    public void setData(Person person){
+        this.person = person;
     }
 
     /**
@@ -28,42 +31,47 @@ public class FrmDiseases extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
-        jCheckBox4 = new javax.swing.JCheckBox();
-        jCheckBox5 = new javax.swing.JCheckBox();
-        jCheckBox6 = new javax.swing.JCheckBox();
-        jButton1 = new javax.swing.JButton();
+        asma = new javax.swing.JCheckBox();
+        diabetes = new javax.swing.JCheckBox();
+        cancer = new javax.swing.JCheckBox();
+        hipertension = new javax.swing.JCheckBox();
+        osteoporosis = new javax.swing.JCheckBox();
+        colesterol = new javax.swing.JCheckBox();
+        next = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(700, 500));
 
         jLabel1.setText("Do you have a disease?. Check all the diseases that you have.");
 
-        jCheckBox1.setText("Asthma");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+        asma.setText("Asthma");
+        asma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+                asmaActionPerformed(evt);
             }
         });
 
-        jCheckBox2.setText("Diabetes");
-        jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
+        diabetes.setText("Diabetes");
+        diabetes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox2ActionPerformed(evt);
+                diabetesActionPerformed(evt);
             }
         });
 
-        jCheckBox3.setText("Cancer");
+        cancer.setText("Cancer");
 
-        jCheckBox4.setText("Hypertension");
+        hipertension.setText("Hypertension");
 
-        jCheckBox5.setText("Osteoporosis");
+        osteoporosis.setText("Osteoporosis");
 
-        jCheckBox6.setText("High Cholesterol");
+        colesterol.setText("High Cholesterol");
 
-        jButton1.setText("NEXT");
+        next.setText("NEXT");
+        next.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nextActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -79,21 +87,21 @@ public class FrmDiseases extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                            .addComponent(jCheckBox1)
+                                            .addComponent(asma)
                                             .addGap(134, 134, 134))
                                         .addGroup(layout.createSequentialGroup()
-                                            .addComponent(jCheckBox2)
+                                            .addComponent(diabetes)
                                             .addGap(124, 124, 124)))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jCheckBox3)
+                                        .addComponent(cancer)
                                         .addGap(138, 138, 138)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jCheckBox6)
-                                    .addComponent(jCheckBox5)
-                                    .addComponent(jCheckBox4)))))
+                                    .addComponent(colesterol)
+                                    .addComponent(osteoporosis)
+                                    .addComponent(hipertension)))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(329, 329, 329)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(next, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(150, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -103,31 +111,50 @@ public class FrmDiseases extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(58, 58, 58)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox1)
-                    .addComponent(jCheckBox4))
+                    .addComponent(asma)
+                    .addComponent(hipertension))
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox2)
-                    .addComponent(jCheckBox5))
+                    .addComponent(diabetes)
+                    .addComponent(osteoporosis))
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox3)
-                    .addComponent(jCheckBox6))
+                    .addComponent(cancer)
+                    .addComponent(colesterol))
                 .addGap(80, 80, 80)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(next, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(137, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+    private void asmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_asmaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+    }//GEN-LAST:event_asmaActionPerformed
 
-    private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
+    private void diabetesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_diabetesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox2ActionPerformed
+    }//GEN-LAST:event_diabetesActionPerformed
+
+    private void nextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextActionPerformed
+        
+        boolean diseases = false;
+        
+        if(asma.isSelected() || diabetes.isSelected() || cancer.isSelected() ||
+                hipertension.isSelected() || osteoporosis.isSelected() ||
+                colesterol.isSelected()){
+            diseases = true;
+        }
+        
+        person.setTieneEnfermedades(diseases);
+        
+        FrmHealth healthInfo = new FrmHealth();
+        healthInfo.setData(person);
+        healthInfo.setLocationRelativeTo(null);
+        healthInfo.show();
+        
+    }//GEN-LAST:event_nextActionPerformed
 
     /**
      * @param args the command line arguments
@@ -165,13 +192,13 @@ public class FrmDiseases extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
-    private javax.swing.JCheckBox jCheckBox5;
-    private javax.swing.JCheckBox jCheckBox6;
+    private javax.swing.JCheckBox asma;
+    private javax.swing.JCheckBox cancer;
+    private javax.swing.JCheckBox colesterol;
+    private javax.swing.JCheckBox diabetes;
+    private javax.swing.JCheckBox hipertension;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton next;
+    private javax.swing.JCheckBox osteoporosis;
     // End of variables declaration//GEN-END:variables
 }

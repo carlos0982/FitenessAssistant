@@ -19,6 +19,7 @@ public class Person {
     boolean tieneEnfermedades;
     boolean smoke;
     boolean drink;
+    String activity;
     
     public Person(String gender, int age, double heigth, double weight){
         this.gender = gender;
@@ -54,6 +55,10 @@ public class Person {
     
     public void setDrink(boolean drink){
         this.drink = drink;
+    }
+    
+    public void setPhysicalActivity(String activity){
+        this.activity = activity;
     }
     
     public void computeIMC(){
