@@ -13,6 +13,7 @@ public class DecisionTree {
 
     public String getTrainingPlan(Person person) {
         
+        person.computeIMC();
         double IMC = person.IMC;
         String recomendation = "Work out";
          
