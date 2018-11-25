@@ -131,6 +131,9 @@ public class FrmHealth extends javax.swing.JFrame {
         
         DecisionTree tree = new DecisionTree();
         String recomendation = tree.getTrainingPlan(person);
+        AssistantWelcome principalWindow = new AssistantWelcome();
+        principalWindow.texto.setText(recomendation);
+        principalWindow.show();
     }//GEN-LAST:event_finishActionPerformed
 
     /**

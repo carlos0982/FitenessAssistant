@@ -40,7 +40,7 @@ public class FrmInfo extends javax.swing.JFrame {
         weight = new javax.swing.JTextField();
         next = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(700, 500));
 
         jLabel1.setText("Name");
@@ -184,6 +184,11 @@ public class FrmInfo extends javax.swing.JFrame {
                 new FrmInfo().setVisible(true);
             }
         });
+    }
+    
+    public void closeWindow(){
+        this.dispose();
+        new AssistantWelcome().setVisible(true);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

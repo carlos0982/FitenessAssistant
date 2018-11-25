@@ -13,7 +13,7 @@ public class AssistantWelcome extends javax.swing.JFrame {
 	 */
 	public AssistantWelcome() {
 		initComponents();
-		setTitle("Expert System to Diagnosis of Diseases");
+		setTitle("Virtual Assistant for Fitness Training");
 		setResizable(false);
 		this.setLocationRelativeTo(null);
 		texto.setEditable(false);
@@ -96,7 +96,7 @@ public class AssistantWelcome extends javax.swing.JFrame {
 		jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED,
 				java.awt.Color.white, java.awt.Color.gray));
 
-		jButton1.setText("Empezar Examen");
+		jButton1.setText("Empezar");
 		jButton1.setToolTipText("Clic para comenzar el examen");
 		jButton1.addActionListener(new java.awt.event.ActionListener() {
 			@Override
@@ -108,7 +108,7 @@ public class AssistantWelcome extends javax.swing.JFrame {
 		texto.setColumns(20);
 		texto.setRows(5);
 		jScrollPane1.setViewportView(texto);
-                jLabel7.setText("hkefbekfbwei");
+                jLabel7.setText("");
 
 		jLabel8.setText("");
                 jLabel6.setFont(new java.awt.Font("Freestyle Script", 0, 17));
@@ -325,7 +325,8 @@ public class AssistantWelcome extends javax.swing.JFrame {
 		java.awt.EventQueue.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				new AssistantWelcome().setVisible(true);
+				AssistantWelcome window = new AssistantWelcome();
+                                window.setVisible(true);
 			}
 		});
 	}
@@ -344,6 +345,6 @@ public class AssistantWelcome extends javax.swing.JFrame {
 	private javax.swing.JPanel jPanel1;
 	private javax.swing.JPanel jPanel2;
 	private javax.swing.JScrollPane jScrollPane1;
-	private javax.swing.JTextArea texto;
+	public javax.swing.JTextArea texto;
 	// End of variables declaration//GEN-END:variables
 }
