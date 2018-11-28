@@ -40,9 +40,12 @@ public class FrmDiseases extends javax.swing.JFrame {
         next = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(700, 500));
+        setBackground(new java.awt.Color(255, 255, 255));
+        setPreferredSize(new java.awt.Dimension(570, 500));
 
-        jLabel1.setText("Do you have a disease?. Check all the diseases that you have.");
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Do you have a disease?. Check all options that apply.");
 
         asma.setText("Asthma");
         asma.addActionListener(new java.awt.event.ActionListener() {
@@ -78,52 +81,46 @@ public class FrmDiseases extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(131, 131, 131)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(156, 156, 156)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                            .addComponent(asma)
-                                            .addGap(134, 134, 134))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(diabetes)
-                                            .addGap(124, 124, 124)))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(cancer)
-                                        .addGap(138, 138, 138)))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(colesterol)
-                                    .addComponent(osteoporosis)
-                                    .addComponent(hipertension)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(329, 329, 329)
-                        .addComponent(next, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(150, Short.MAX_VALUE))
+                    .addComponent(asma)
+                    .addComponent(diabetes)
+                    .addComponent(cancer))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(hipertension)
+                    .addComponent(osteoporosis)
+                    .addComponent(colesterol))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(83, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(68, 68, 68))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(217, 217, 217)
+                .addComponent(next, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(76, 76, 76)
+                .addGap(49, 49, 49)
                 .addComponent(jLabel1)
-                .addGap(58, 58, 58)
+                .addGap(52, 52, 52)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(asma)
                     .addComponent(hipertension))
-                .addGap(36, 36, 36)
+                .addGap(68, 68, 68)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(diabetes)
                     .addComponent(osteoporosis))
-                .addGap(35, 35, 35)
+                .addGap(76, 76, 76)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cancer)
-                    .addComponent(colesterol))
-                .addGap(80, 80, 80)
+                    .addComponent(colesterol)
+                    .addComponent(cancer))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
                 .addComponent(next, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addGap(56, 56, 56))
         );
 
         pack();
@@ -152,7 +149,9 @@ public class FrmDiseases extends javax.swing.JFrame {
         FrmHealth healthInfo = new FrmHealth();
         healthInfo.setData(person);
         healthInfo.setLocationRelativeTo(null);
+        healthInfo.getContentPane().setBackground(new java.awt.Color(50, 205, 50));
         healthInfo.show();
+        this.dispose();
         
     }//GEN-LAST:event_nextActionPerformed
 

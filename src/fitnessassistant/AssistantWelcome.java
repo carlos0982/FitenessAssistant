@@ -54,7 +54,7 @@ public class AssistantWelcome extends javax.swing.JFrame {
                 jLabel2.setForeground(Color.white);
                 jLabel2.setHorizontalAlignment(SwingConstants.CENTER);
 
-		jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/doc.png"))); // NOI18N
+		jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/intro.jpg"))); // NOI18N
 
 		jLabel5.setFont(new java.awt.Font("Freestyle Script", 0, 17)); // NOI18N
 		jLabel5.setText("Training");
@@ -189,7 +189,9 @@ public class AssistantWelcome extends javax.swing.JFrame {
 		
             FrmInfo infoPerson = new FrmInfo();
             infoPerson.setLocationRelativeTo(null);
+            infoPerson.getContentPane().setBackground(new java.awt.Color(50, 205, 50));
             infoPerson.show();
+            this.dispose();
             
 	}// GEN-LAST:event_jButton1ActionPerformed
 
